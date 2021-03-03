@@ -20,6 +20,10 @@ h3 {
     color: #fff;
 }
 
+.color-blue {
+    color: #2c3e4f;
+}
+
 .bg-blue {
     background-color: #2c3e4f;
 }
@@ -53,10 +57,6 @@ h3 {
     padding: 50px 0;
 }
 
-.main-section .portfolio h2 {
-    text-align: center;
-}
-
 .main-section .portfolio .card {
     height: 360px;
     margin-top: 30px;
@@ -69,21 +69,19 @@ h3 {
     padding-top: 50px;
     padding-bottom: 30px;
 }
-.main-section .about h2 {
-    text-align: center;
-}
 
 .main-section .about .download {
     margin-top: 40px;
-    text-align: center;
+}
+
+/* Contact */
+.main-section .contact {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    /* GENERAL */
-    h3 {
-        font-size: 24px;
-    }
     /* HEADER */
     .main-header {
         height: 90px;
