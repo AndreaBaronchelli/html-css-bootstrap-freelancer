@@ -64,6 +64,20 @@ h3 {
     background-color: #ccc;  
 }
 
+/* About */
+.main-section .about{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.main-section .about h2 {
+    text-align: center;
+}
+
+.main-section .about .download {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
     /* GENERAL */
