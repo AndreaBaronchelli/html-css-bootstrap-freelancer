@@ -28,6 +28,10 @@ h3 {
     background-color: #2c3e4f;
 }
 
+.bg-lightblue {
+    background-color: #3b536d;
+}
+
 .bg-green {
     background-color: #19bc9c;
 }
@@ -78,6 +82,13 @@ h3 {
 .main-section .contact {
     padding-top: 50px;
     padding-bottom: 30px;
+}
+
+/* FOOTER */
+/* Upper Footer */
+.main-footer .upper-footer {   
+    padding: 50px 0;
+
 }
 
 /* TABLET */
