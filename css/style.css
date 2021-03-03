@@ -1,0 +1,55 @@
+/* GENERAL */
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* UTILITIES */
+.color-white {
+    color: #fff;
+}
+
+.bg-blue {
+    background-color: #2c3e4f;
+}
+
+/* HEADER */
+.main-header {
+    height: 80px;
+    line-height: 80px;
+}
+
+.main-header h2{  
+    transform: translateY(10px);
+}
+
+/* TABLET */
+@media screen and (min-width:768px) {
+    /* GENERAL */
+    h2 {
+        font-size: 24px;
+    }
+    /* HEADER */
+    .main-header {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .main-header .menu {
+        text-align: right;
+    }
+}
+
+
+
