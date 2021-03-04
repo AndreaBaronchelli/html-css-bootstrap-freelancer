@@ -72,6 +72,11 @@ h3 {
     background: #fff;
 }
 
+.portfolio .star-divider::before,
+.portfolio .star-divider::after {
+    background: #2c3e4f;
+}
+
 /* NAVBAR */
 .ab-navbar {
     height: 90px;
@@ -110,6 +115,10 @@ h3 {
 /* Portolio */
 .main-section .portfolio {
     padding: 50px 0;
+}
+
+.main-section .portfolio h2 {
+    font-size: 26px;
 }
 
 .main-section .portfolio .card {
