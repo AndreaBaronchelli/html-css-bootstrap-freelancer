@@ -50,7 +50,8 @@ h3 {
     font-size: 28px;
 }
 
-.star-divider::before {
+.star-divider::before,
+.star-divider::after {
     content: "";
     display: inline-block;
     width: 75px;
@@ -62,14 +63,8 @@ h3 {
 }
 
 .star-divider::after {
-    content: "";
-    display: inline-block;
-    width: 75px;
-    height: 5px;
+    margin-right: 0;
     margin-left: 5px;
-    border-radius: 5px;
-    vertical-align: middle;
-    background: #fff;
 }
 
 .portfolio .star-divider::before,
@@ -122,10 +117,7 @@ h3 {
 }
 
 .main-section .portfolio .card {
-    height: 360px;
-    margin-top: 30px;
-    border-radius: 10px;
-    background-color: #ccc;  
+    margin-top: 30px;  
 }
 
 /* About */
@@ -193,11 +185,6 @@ h3 {
     .main-section .hero p {
         font-size: 24px;
     }
-
-    /* PORTFOLIO */
-    .main-section .portfolio .card {
-        height: 330px;
-    }
 }
 
 /* DESKTOP */
@@ -212,11 +199,4 @@ h3 {
         width: 170px;
         margin-left: 30px;
     }
-    /* PORTFOLIO */
-    .main-section .portfolio .card {
-        height: 260px;
-    }
 }
-
-
-
