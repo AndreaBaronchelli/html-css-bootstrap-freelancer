@@ -3,6 +3,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+body {
+    padding-top: 90px;
+}
+
 h1,
 h2,
 h3,
@@ -40,14 +44,24 @@ h3 {
     background-color: #fff;
 }
 
-/* HEADER */
-.main-header {
-    height: 80px;
-    line-height: 80px;
+/* NAVBAR */
+.ab-navbar {
+    height: 90px;
+    border: 0;
 }
 
-.main-header h3{  
-    transform: translateY(10px);
+.ab-navbar .ab-toggle {
+    margin-top: 27px; 
+}
+
+.ab-navbar .ab-brand {
+    font-weight: 700;
+}
+
+.ab-navbar .ab-brand,
+.ab-navbar .ab-navbar-right > li > a {
+    color: #fff;
+    margin-top: 20px;
 }
 
 /* MAIN SECTION */
@@ -99,14 +113,13 @@ h3 {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    /* HEADER */
-    .main-header {
-        height: 90px;
-        line-height: 90px;
+    /* NAVBAR */
+    .ab-navbar .ab-brand {
+        font-size: 26px;
     }
-
-    .main-header .menu {
-        text-align: right;
+    .ab-navbar .ab-navbar-right > li > a {
+        font-weight: 700;
+        font-size: 16px;
     }
 
     /* PORTFOLIO */
