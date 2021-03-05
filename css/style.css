@@ -71,8 +71,8 @@ p {
     margin-left: 5px;
 }
 
-.portfolio .star-divider::before,
-.portfolio .star-divider::after {
+.blue.star-divider::before,
+.blue.star-divider::after {
     background: #2c3e4f;
 }
 
@@ -127,9 +127,6 @@ p {
 }
 
 .main-section .about a {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     margin-top: 50px;
     border: 1px solid #fff;
     border-radius: 7px;
@@ -143,6 +140,29 @@ p {
     padding-top: 50px;
     padding-bottom: 30px;
 }
+.main-section .contact input,
+.main-section .contact textarea {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.main-section .contact input::placeholder,
+.main-section .contact textarea::placeholder {
+    transform: translateY(-5px);
+    font-size: 18px;
+    color: #2c3e4f;
+}
+
+.main-section .contact button {
+    border: 1px solid #19bc9c;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #19bc9c;
+}
+
 
 /* FOOTER */
 /* Upper Footer */
