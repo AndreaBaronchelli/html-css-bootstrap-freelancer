@@ -5,6 +5,7 @@
 
 body {
     padding-top: 90px;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -90,10 +91,16 @@ p {
     font-weight: 700;
 }
 
-.ab-navbar .ab-brand,
-.ab-navbar .ab-navbar-right > li > a {
+.ab-navbar .navbar-brand,
+.ab-navbar .navbar-nav > li > a {
     color: #fff;
     margin-top: 20px;
+    transition: color 0.2s;
+}
+
+.ab-navbar .navbar-brand:hover,
+.ab-navbar .navbar-nav > li > a:hover {
+    color: #19bc9c;
 }
 
 /* MAIN SECTION */
@@ -117,7 +124,39 @@ p {
 }
 
 .main-section .portfolio .card {
+    position: relative;
     margin-top: 30px;  
+}
+
+.main-section .portfolio .card .layover {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #19bc9c;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.main-section .portfolio .card:hover .layover {
+    opacity: 0.4;
+}
+
+.main-section .portfolio .card i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.main-section .portfolio .card:hover i {
+    opacity: 1;
 }
 
 /* About */
@@ -133,6 +172,13 @@ p {
     padding: 10px 15px;
     font-size: 18px;
     background-color: transparent;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.main-section .about a:hover {
+    background-color: #fff;
+    color: #19bc9c;
+
 }
 
 /* Contact */
@@ -146,6 +192,12 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0;
     box-shadow: none;
+    transition: border-bottom 0.2s;
+}
+
+.main-section .contact input:hover,
+.main-section .contact textarea:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .main-section .contact input::placeholder,
@@ -161,6 +213,12 @@ p {
     padding: 10px 15px;
     font-size: 18px;
     background-color: #19bc9c;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.main-section .contact button:hover {
+    color: #19bc9c;
+    background-color: #fff;
 }
 
 /* FOOTER */
@@ -191,7 +249,12 @@ p {
     border: 1px solid #fff;
     border-radius: 50%;
     font-size: 20px;
+    transition: border-color 0.2s, color 0.2s;
+}
 
+.main-footer .upper-footer .icons a:hover {
+    border-color: #19bc9c;
+    color: #19bc9c;
 }
 
 .main-footer .upper-footer .icons a:last-child {
@@ -200,6 +263,12 @@ p {
 
 .main-footer .upper-footer .about a{
     color: #19bc9c;
+    transition: color 0.2s;
+}
+
+.main-footer .upper-footer .about a:hover {
+    text-decoration: none;
+    color: #137a66;
 }
 
 /* Bottom Footer */
