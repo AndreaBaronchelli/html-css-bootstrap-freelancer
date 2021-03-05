@@ -19,6 +19,10 @@ h3 {
     font-size: 18px;
 }
 
+p {
+    font-size: 18px;
+}
+
 /* UTILITIES */
 .color-white {
     color: #fff;
@@ -103,10 +107,6 @@ h3 {
     margin: 0 auto;
 }
 
-.main-section .hero p {
-    font-size: 18px;
-}
-
 /* Portolio */
 .main-section .portfolio {
     padding: 50px 0;
@@ -126,8 +126,16 @@ h3 {
     padding-bottom: 30px;
 }
 
-.main-section .about .download {
-    margin-top: 40px;
+.main-section .about a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: transparent;
 }
 
 /* Contact */
@@ -151,6 +159,14 @@ h3 {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+    /* GENERAL */
+    h2 {
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 20px;
+    }
 
     /* UTILITIES */
     .star-divider::before {
@@ -182,10 +198,11 @@ h3 {
         font-size: 60px;
     }
 
-    .main-section .hero p {
-        font-size: 24px;
+    /* ABOUT */
+    .main-section .about {
+        padding-top: 90px;
+        padding-bottom: 60px;
     }
-}
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
